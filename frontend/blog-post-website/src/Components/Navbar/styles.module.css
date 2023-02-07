@@ -1,0 +1,157 @@
+.univ{
+    border:none;
+    margin:0;
+    padding:20px 40px;
+    width:100%;
+    
+    /* padding:40px; */
+    background-color: #F9FAFB;
+    border-bottom: 1px solid #F2F4F7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dsk_container{
+    width:100%;
+    max-width:1200px;
+    /* background-color: aqua; */
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.dsk_c_p1{
+    /* background-color: aqua; */
+
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    width: fit-content;
+}
+.company_block{
+    font-size: 18px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dsk_c_p1_nav{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    margin:0;
+    margin-left: 5vw;
+}
+
+.dsk_nav_item1_active{
+    padding:2px 4px;
+    margin:10px;
+    width: fit-content;
+    height: fit-content;
+    color:#101828;
+}
+
+.dsk_nav_item1_inactive{
+    color: #475467;
+    padding:2px 4px;
+    margin:10px;
+    width: fit-content;
+    height: fit-content;
+}
+.dsk_nav_item1_inactive:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dsk_c_p2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    margin:0;
+}
+
+#hamburger{
+    margin:0 6px;
+    padding:10px 12px;
+}
+
+#hamburger:hover .menuBox{
+    display: flex;
+    opacity:1;
+    transition: 1s;
+}
+
+.menuBox{
+    opacity: 0;
+    display: none;
+    transition: 1s;
+
+    background-color: #F9FAFB;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    min-width:200px;
+    height: fit-content;
+
+    border-radius: 10px;
+    padding:2px 2px;
+
+    position: fixed;
+    top:60px;
+    right:3vw;
+
+    border:3px solid #7f56d97c;
+}
+
+.menuItem{
+    cursor: pointer;
+    /* width:100%; */
+    text-align: start;
+    padding:10px; 
+    padding-left:20px;
+    color:#475467;
+    
+    border:none;
+    /* border-radius: 20px; */
+    background:#F9FAFB;
+    
+    font-size: 16px;
+
+    font-weight: 500;
+    transition: 0.3s;
+}
+.menuItem_top{
+    cursor: pointer;
+    /* width:100%; */
+    text-align: center;
+    padding:10px; 
+    padding-left:20px;
+    color:#475467;
+    
+    border:none;
+    /* border-radius: 20px; */
+    background:#F9FAFB;
+    
+    font-size: 16px;
+
+    font-weight: 500;
+    transition: 0.3s;
+    border-bottom: 1px solid lightgray;
+}
+.menuItem:hover{
+    background-color: #F2F4F7;
+    color:#101828;
+    font-weight: 700;
+    transition: 0.3s;
+}

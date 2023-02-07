@@ -1,0 +1,138 @@
+.univ{
+    border:none;
+    padding:0;
+    margin:0;
+
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    background-color: #F2F4F7;
+    font-family: 'Ubuntu', sans-serif;;
+    /* background-color: aqua; */
+}
+.middle_container{
+    width:100%;
+    /* height:400px; */
+    /* background-color: rgba(30, 78, 120, 0.05); */
+    background-color: #F9FAFB;
+    padding:80px 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    font-size: 16px;
+}
+.company_block{
+    font-size: 18px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.email_box{
+    padding:10px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blogsContainer{
+    width:100%;
+    background-color: #FFFFFF;
+    padding:80px 100px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: stretch; */
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+
+.leftContainer{
+    width:250px;
+    /* background-color: aquamarine; */
+    padding: 40px 20px;
+    border:2px solid rgba(211, 211, 211, 0.3);
+}
+.selectorType1{
+    border:1px solid lightgray;
+    padding: 4px 10px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.rightContainer{
+    /* min-width: 400px; */
+    /* background-color: gainsboro; */
+    width:calc(100% - 250px);
+    border:2px solid rgba(211, 211, 211, 0.3);
+    border-left: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    padding:20px 0;
+}
+
+.cards{
+    /* width:340px; */
+    min-width:250px;
+    max-width:300px;
+    padding:10px;
+    background-color: #F9FAFB;
+    margin: 30px 20px;
+}
+.cardImage{
+    width:100%;
+    height:auto;
+    cursor: pointer;
+}
+.cardData{
+    padding:5px 0 0 5px;
+}
+.cardTitle{
+    font-size: 18px;
+    padding:0 0 5px 2px;
+    font-weight: 500;
+}
+.cardContentText{
+    font-size: 14px;
+}
+.interactionBar{
+    padding:8px 10px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoBtn1{
+    cursor: pointer;
+}
+.logoDisp12{
+    display: none;
+}
+.logoBtn1:hover .logoDisp12{
+    display: block;
+}
+.logoBtn1:hover .logoDisp11{
+    display: none;
+}
+.logoBtn2{
+    cursor: pointer;
+}
+.logoDisp22{
+    display: none;
+}
+.logoBtn2:hover .logoDisp22{
+    display: block;
+}
+.logoBtn2:hover .logoDisp21{
+    display: none;
+}
+.logoBtn:hover{
+    border: 1px solid lightgray;
+}

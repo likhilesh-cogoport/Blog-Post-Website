@@ -1,0 +1,215 @@
+Compiled successfully!
+
+You can now view to-do-list_reactjs in the browser.
+
+  Local:            http://localhost:3001
+  On Your Network:  http://172.25.26.52:3001
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+¸¸¸^C
+likhileshbalpande@Cogoports-MacBook-Air-2 to-do-list_reactjs % çd ..
+çd ..
+zsh: command not found: çd
+likhileshbalpande@Cogoports-MacBook-Air-2 to-do-list_reactjs % cd ..
+likhileshbalpande@Cogoports-MacBook-Air-2 React-Tutorials % ls
+README.md			ToDoList in JS			imdb-apis-implementation	to-do-list_reactjs
+likhileshbalpande@Cogoports-MacBook-Air-2 React-Tutorials % cd ..
+likhileshbalpande@Cogoports-MacBook-Air-2 Desktop % ls
+Blog-Post-Website				Screen Recording 2023-02-06 at 11.46.25 PM.mov	git-tutorial
+P F. 23-24xlsx.xlsx				Screenshot 2023-02-04 at 4.46.27 PM.png		git-tutorial-task-1
+React-Tutorials					Screenshot 2023-02-06 at 11.26.50 PM.png
+Screen Recording 2023-02-06 at 11.42.49 PM.mov	Screenshot 2023-02-06 at 11.47.49 PM.png
+likhileshbalpande@Cogoports-MacBook-Air-2 Desktop % cd Blog-Post-Website 
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   frontend/blog-post-website/package-lock.json
+	modified:   frontend/blog-post-website/package.json
+	modified:   frontend/blog-post-website/public/index.html
+	modified:   frontend/blog-post-website/src/App.css
+	modified:   frontend/blog-post-website/src/App.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	frontend/.DS_Store
+	frontend/blog-post-website/public/images/
+	frontend/blog-post-website/src/Components/
+	frontend/blog-post-website/src/Pages/
+	frontend/blog-post-website/src/global-styles.module.css
+	frontend/blog-post-website/src/helpers/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git add .
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git commit -m 'added routes, home page, axios, working on :id page'
+[main c8ed89d] added routes, home page, axios, working on :id page
+ Committer: Likhilesh Balpande <likhileshbalpande@Cogoports-MacBook-Air-2.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 24 files changed, 920 insertions(+), 54 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 100644 frontend/.DS_Store
+ create mode 100644 frontend/blog-post-website/public/images/Imagebg1.png
+ create mode 100644 frontend/blog-post-website/public/images/Imageimg1.png
+ create mode 100644 frontend/blog-post-website/public/images/Imageimg2.png
+ create mode 100644 frontend/blog-post-website/public/images/Imageimg3.png
+ create mode 100644 frontend/blog-post-website/public/images/Imageimg4.png
+ create mode 100644 frontend/blog-post-website/public/images/Imageimg5.png
+ create mode 100644 frontend/blog-post-website/public/images/Imageimg6.png
+ create mode 100644 frontend/blog-post-website/src/Components/Navbar/Navbar.js
+ create mode 100644 frontend/blog-post-website/src/Components/Navbar/index.js
+ create mode 100644 frontend/blog-post-website/src/Components/Navbar/styles.module.css
+ create mode 100644 frontend/blog-post-website/src/Pages/DisplayArticle/DisplayArticle.js
+ create mode 100644 frontend/blog-post-website/src/Pages/DisplayArticle/index.js
+ create mode 100644 frontend/blog-post-website/src/Pages/DisplayArticle/styles.module.css
+ create mode 100644 frontend/blog-post-website/src/Pages/Home/Home.js
+ create mode 100644 frontend/blog-post-website/src/Pages/Home/styles.module.css
+ create mode 100644 frontend/blog-post-website/src/global-styles.module.css
+ create mode 100644 frontend/blog-post-website/src/helpers/axios.js
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git push
+Enumerating objects: 47, done.
+Counting objects: 100% (47/47), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (33/33), done.
+Writing objects: 100% (37/37), 962.09 KiB | 38.48 MiB/s, done.
+Total 37 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 4 local objects.
+To https://github.com/likhilesh-cogoport/Blog-Post-Website.git
+   4c133f4..c8ed89d  main -> main
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git status                                                         
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   frontend/blog-post-website/src/Pages/DisplayArticle/styles.module.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git commit -m 'added routes, home page, axios, working on :id page'
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   frontend/blog-post-website/src/Pages/DisplayArticle/styles.module.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git status                                                         
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   frontend/blog-post-website/src/Pages/DisplayArticle/styles.module.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git status                                                         
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   frontend/blog-post-website/src/Pages/DisplayArticle/styles.module.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git add .                                                          
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git commit -m 'added routes, home page, axios, working on :id page'
+[main acfbef2] added routes, home page, axios, working on :id page
+ Committer: Likhilesh Balpande <likhileshbalpande@Cogoports-MacBook-Air-2.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 29 insertions(+)
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git push                                                           
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 1.08 KiB | 1.08 MiB/s, done.
+Total 9 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+To https://github.com/likhilesh-cogoport/Blog-Post-Website.git
+   c8ed89d..acfbef2  main -> main
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git status                                                         
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % ls
+README.md	backend		frontend
+likhileshbalpande@Cogoports-MacBook-Air-2 Blog-Post-Website % cd backend 
+likhileshbalpande@Cogoports-MacBook-Air-2 backend % nano readme_backend.txt
+
+  UW PICO 5.09                                                   File: readme_backend.txt                                                    Modified  
+
+First text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help              ^O WriteOut              ^R Read File             ^Y Prev Pg               ^K Cut Text              ^C Cur Pos               
+^X Exit                  ^J Justify               ^W Where is              ^V Next Pg               ^U UnCut Text            ^T To Spell              

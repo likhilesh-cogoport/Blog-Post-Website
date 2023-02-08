@@ -124,10 +124,14 @@ export default function Home() {
                     articles.map((article)=>{
                         return(
                             <div key={'article-card'+article.id} className={styles.cards}>
-                                <img src={`${"images/imageimg1.png"}`} onClick={()=>gotoDetialsPage(article)}  title="view More" className={styles.cardImage}/>
+                                {
+                                    article.imageurl?
+                                    <img src={`${"images/imageimg1.png"}`} onClick={()=>gotoDetialsPage(article)}  title="view More" className={styles.cardImage}/>
+                                    :<img src={article.imageurl} onClick={()=>gotoDetialsPage(article)}  title="view More" className={styles.cardImage}/>
+                                }
                                 <div className={styles.cardData}>
                                     <p className={styles.cardTitle}>{article.title}</p>
-                                    <p className={styles.cardContentText}>{article.content.substring(0,72)}{" ..."}</p>
+                                    <p className={styles.cardContentText}>{article?.desc?.substring(0,72)}{" ..."}</p>
                                     <div className={styles.interactionBar}>
                                         <div className={styles.logoBtn1}>
                                             <div className={styles.logoDisp11}>

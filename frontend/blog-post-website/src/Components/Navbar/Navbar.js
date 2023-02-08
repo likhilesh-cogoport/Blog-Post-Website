@@ -78,6 +78,7 @@ export default function Navbar() {
     console.log("You logged out");
     localStorage.setItem("user","");
     navigate("/");
+    getLoginDetails();
   }
   
   return (

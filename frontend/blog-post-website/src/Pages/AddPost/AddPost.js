@@ -55,6 +55,7 @@ async function postArticle(){
     console.log(categoryId)
     console.log(title)
     console.log(value);
+    // alert(desc);
     const config = {
         headers: { Authorization: `Bearer ${user.token}` }
       };
@@ -65,7 +66,8 @@ async function postArticle(){
         content:value,
         category_id:categoryId,
         user_id:user.user.id,
-        imageurl:imageURL
+        imageurl:imageURL,
+        desc:desc,
     },
     config).then((d)=>{
         console.log(d);

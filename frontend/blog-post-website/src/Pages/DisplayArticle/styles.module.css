@@ -76,6 +76,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     width:50vw;
     margin:auto;
@@ -90,4 +91,32 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-width:250px;
+}
+.logoBtn1{
+    cursor: pointer;
+}
+.logoDisp12{
+    display: none;
+}
+.logoBtn1:hover .logoDisp12{
+    display: block;
+}
+.logoBtn1:hover .logoDisp11{
+    display: none;
+}
+.logoBtn2{
+    cursor: pointer;
+}
+.logoDisp22{
+    display: none;
+}
+.logoBtn2:hover .logoDisp22{
+    display: block;
+}
+.logoBtn2:hover .logoDisp21{
+    display: none;
+}
+.logoBtn:hover{
+    border: 1px solid lightgray;
 }

@@ -1,0 +1,35 @@
+.middle_container{
+    width:100%;
+    /* height:400px; */
+    /* background-color: rgba(30, 78, 120, 0.05); */
+    background-color: #F9FAFB;
+    padding:80px 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    font-size: 16px;
+}
+.company_block{
+    font-size: 18px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.email_box{
+    padding:10px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.search_box2{
+    width:360px;
+}
+
+@media (max-width:500px){
+    .search_box2{
+        width:200px;
+    }
+}

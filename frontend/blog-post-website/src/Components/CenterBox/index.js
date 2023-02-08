@@ -1,0 +1,1 @@
+export {default} from './CenterBox1.js';

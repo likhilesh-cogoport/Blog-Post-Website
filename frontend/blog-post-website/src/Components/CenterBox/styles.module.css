@@ -1,0 +1,7 @@
+.univ{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-44%);
+    /* background-color: rgba(0, 255, 255, 0.151); */
+}

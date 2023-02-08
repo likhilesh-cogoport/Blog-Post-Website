@@ -89,13 +89,13 @@ export default function Navbar() {
           </div> */}
           <CompanyLogo/>
           <div className={styles.dsk_c_p1_nav}>
-            <div className={styles.dsk_nav_item1_active}>
+            <div className={styles.dsk_nav_item1_inactive} onClick={()=>{navigate("/")}}>
               Home
             </div>
-            <div className={styles.dsk_nav_item1_inactive}>
+            <div className={styles.dsk_nav_item1_inactive} onClick={()=>{navigate("/add-post")}}>
               Create Article
             </div>
-            <div className={styles.dsk_nav_item1_inactive}>
+            <div className={styles.dsk_nav_item1_inactive} onClick={()=>{navigate("/")}}>
               Search Article
             </div>
           </div>

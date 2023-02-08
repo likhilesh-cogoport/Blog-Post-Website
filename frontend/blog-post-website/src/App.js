@@ -5,6 +5,7 @@ import Home from './Pages/Home/Home';
 import DisplayArticle from './Pages/DisplayArticle/DisplayArticle';
 import Signup from './Pages/AuthPage/Signup';
 import Login from './Pages/AuthPage/Login';
+import AddPost from './Pages/AddPost/AddPost';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/auth" element={<Signup />}/>
         <Route path="/auth/signup" element={<Signup />}/>
         <Route path="/auth/login" element={<Login />}/>
+        <Route path="/add-post" element={<AddPost />}/>
         <Route path="/article/:id" element={<DisplayArticle/>}/>
       </Routes>
     </BrowserRouter>
